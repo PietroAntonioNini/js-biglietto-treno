@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/a90f025e601934c11e010ec2b7e5c672.jpg);
+    background-size: cover;
+}
+
+.box {
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    /* test */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    backdrop-filter: blur(50px);
+}
+
+.box h1 {
+    font-size: 40px;
+}
+
+.box #Price {
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+
