@@ -17,26 +17,85 @@ main {
 }
 
 .box {
+    padding: 50px 0;
     width: 800px;
     height: 600px;
-    border-radius: 20px;
-    /* test */
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
     backdrop-filter: blur(50px);
 }
 
 .box h1 {
     font-size: 40px;
+    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.333);
 }
 
-.box #Price {
-    margin-bottom: 50px;
+.user-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 20px;
+}
+
+.user-age,
+.user-km {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Age, #Km {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.user-info .tag {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.ticket .info {
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+    font-size: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 98, 255, 0.496);
+    background-color: rgba(0, 98, 255, 0.73);
+    
+}
+
+.ticket #price {
     font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+    align-self: baseline;
+    line-height: 0;
+}
+
+.ticket #price-shadow {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+    align-self: baseline;
+
+    transform: scaleX(-1) rotate(180deg);
+    filter: opacity(15%);
 }
 
