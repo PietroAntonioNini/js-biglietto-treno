@@ -6,7 +6,7 @@
     <title>Convertitore Temperatura</title>
 
     <!-- my style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./snack/css/style.css">
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +18,6 @@
                 <button onclick="mostraForm1()">temperatura</button>
                 <button onclick="mostraForm2()">media aritmetica</button>
                 <button onclick="mostraForm3()">carta, sasso, forbice</button>
-                <button onclick="mostraForm4()">biglietto treno</button>
             </div>
 
             <div id="card-title">
@@ -94,35 +93,9 @@
                     </div>
                 </div>
             </form>
-
-            <form id="myForm4" onsubmit="return inviaDati()" style="display: none;">
-
-                <h1>Costo biglietto</h1>
-
-                <div class="user-info">
-                    <div class="user-age">
-                        <span class="tag">Età</span>
-                        <input id="age" type="number" name="quantity" min="0" max="120" step="1" required>
-                    </div>
-                    <div class="user-km">
-                        <span class="tag">Km</span>
-                        <input id="km" type="number" name="quantity" min="0" max="4000" required>
-                    </div>
-                </div>
-                
-                <div class="buttons">
-                    <input class="submit" type="submit" value="calcola prezzo">
-                    <button class="reset" type="button" onclick="svuotaCampi4()">reset</button>
-                </div>
-
-                <div class="ticket">
-                    <span id="price"></span>
-                    <span id="price-shadow"></span>
-                </div>
-            </form>
         </div>
     </main>
 
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./snack/js/script.js"></script>
 </body>
 </html>

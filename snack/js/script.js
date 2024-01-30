@@ -6,7 +6,6 @@
         document.getElementById("myForm1").style.display = `block`
         document.getElementById("myForm2").style.display = `none`
         document.getElementById("myForm3").style.display = `none`
-        document.getElementById("myForm4").style.display = `none`
     }
 
     function mostraForm2() {
@@ -14,7 +13,6 @@
         document.getElementById("myForm1").style.display = `none`
         document.getElementById("myForm2").style.display = `block`
         document.getElementById("myForm3").style.display = `none`
-        document.getElementById("myForm4").style.display = `none`
     }
 
     function mostraForm3() {
@@ -22,17 +20,7 @@
         document.getElementById("myForm1").style.display = `none`
         document.getElementById("myForm2").style.display = `none`
         document.getElementById("myForm3").style.display = `block`
-        document.getElementById("myForm4").style.display = `none`
     }
-
-    function mostraForm4() {
-        document.getElementById("card-title").style.display = `none`
-        document.getElementById("myForm1").style.display = `none`
-        document.getElementById("myForm2").style.display = `none`
-        document.getElementById("myForm3").style.display = `none`
-        document.getElementById("myForm4").style.display = `block`
-    }
-
 
 
 // TEMPERATURE PROGRAM
@@ -188,58 +176,4 @@ function svuotaCampi3() {
     document.getElementById("matchResult").innerHTML = ""
 }
 
-//FINE
-
-
-
-
-// BIGLIETTO TRENO PROGRAM
-
-let age;
-let km;
-let amount;
-
-function inviaDati() {
-    
-    age = document.getElementById(`age`).value;
-    km = document.getElementById(`km`).value;
-
-    age = parseInt(age);
-    km = parseInt(km);
-
-    console.log(age);
-    console.log(km);
-
-    amount = Math.floor(km) * 0.21;
-    console.log(amount);
-
-    if (age < 18) {
-        amount = `${amount}` - ((`${amount}` * 20) / 100);
-        amount = amount.toFixed(2);
-        console.log(price);
-
-    } 
-    else if (age >= 65) {
-        amount = `${amount}` - ((`${amount}` * 40) / 100);
-        amount = amount.toFixed(2);
-        console.log(price);
-
-
-    } else {
-        amount = amount.toFixed(2);
-    }
-
-    document.getElementById("price").innerHTML = `${amount} €`;
-    document.getElementById("price-shadow").innerHTML = `${amount} €`;
-
-    return false;
-}
-
-function svuotaCampi4() {
-    document.getElementById("age").value = ""
-    document.getElementById("km").value = ""
-
-    document.getElementById("price").innerHTML = ""
-    document.getElementById("price-shadow").innerHTML = ""
-}
 //FINE
